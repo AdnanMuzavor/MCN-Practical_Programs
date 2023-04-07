@@ -1,9 +1,30 @@
 ### MCN : Modern Computer Network
+
 - You will find this repository filled with programs that portray various concepts in the above mentioned subject.
 
-### Language : C++
+### Language : C++, JAVA
 
-## Exp 01 
-- It deals with ***CodeWord*** formation from sender side which is then sent to receiver.
+## Exp 01: Devices used in netorking
+
+- Study of various netwroking devices and their significance.
+
+## Exp 02: IP commands
+
+- Study of various netwroking IP Commands and their significance.
+
+## EXP 03 : Error Detection Codes
+
+### Exp 3.1: Cyclic Redundancy Check (CRC)
+
+- It deals with **_CodeWord_** formation from sender side which is then sent to receiver.
 - Receiver on receiving the data [ which is ***CodeWord*** ] validates it.
-- If ***invalid*** sender shall ***resend*** the data otherwise sender can proceed with next set of data.
+- If **_invalid_** sender shall **_resend_** the data otherwise sender can proceed with next set of data.
+
+### Exp 3.2: Checksum
+
+- First data to be sent is divided into blocks of equal size
+- This blocks are added and the sum formed is complemented forming checksum
+- This checksum is appended to the data to be sent and sent receiver
+- Receiver on receiving the data [ which has ***checksum*** ] validates it.
+- It adds up all the blocks and complements the sum
+- If result of complemented sum is 0 then **No Error** Otherwise **Error**.
