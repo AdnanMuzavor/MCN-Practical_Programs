@@ -12,15 +12,15 @@
 
 - Study of various netwroking IP Commands and their significance.
 
-## EXP 03 : Error Detection Codes
+## Error Detection Codes
 
-### Exp 3.1: Cyclic Redundancy Check (CRC)
+## Exp 3:  Cyclic Redundancy Check (CRC)
 
 - It deals with **_CodeWord_** formation from sender side which is then sent to receiver.
 - Receiver on receiving the data [ which is ***CodeWord*** ] validates it.
 - If **_invalid_** sender shall **_resend_** the data otherwise sender can proceed with next set of data.
 
-### Exp 3.2: Checksum
+## Exp 4: Checksum
 
 - First data to be sent is divided into blocks of equal size
 - This blocks are added and the sum formed is complemented forming checksum
@@ -28,3 +28,6 @@
 - Receiver on receiving the data [ which has ***checksum*** ] validates it.
 - It adds up all the blocks and complements the sum
 - If result of complemented sum is 0 then **No Error** Otherwise **Error**.
+
+## Exp 5: Socket Programming
+- To create a SOCKET for two way and one way communication between **server and client**.

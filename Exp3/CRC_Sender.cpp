@@ -1,4 +1,3 @@
-
 #include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
@@ -52,7 +51,11 @@ public:
         int j=0;
         for(int i=n; i<data.size(); i++)
         {data[i]=curr_divident[j++];}
-        cout<<"\n___Data sent to receiver___"<<endl;
+        cout<<"\nRemainder  after division i.e CRC is: ";
+         for(int i=0;i<curr_divident.size();i++){
+            cout<<curr_divident[i]<<" ";
+         }
+        cout<<"\n\n___Data sent to receiver___"<<endl;
         cout<<"CODE WORD IS: ";
         for(int i=0; i<data.size(); i++) cout<<data[i]<<" ";
         cout<<endl;

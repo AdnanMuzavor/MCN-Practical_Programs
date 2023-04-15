@@ -1,5 +1,3 @@
-
-
 #include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
@@ -16,7 +14,7 @@ public:
         this->k=k;
         this->data=data;
         this->gx=gx;
-        cout<<"\n____Initialisation Data___"<<endl;
+        cout<<"\n____Data Received [Code Word] is___"<<endl;
         cout<<"Data: ";
         for(int i=0; i<n; i++) {cout<<data[i]<<" ";}
         cout<<endl;
@@ -38,16 +36,29 @@ public:
     void Verify()
     {
         bool no_error=true;
-        cout<<"\n_____C O N C L U S I O N_____"<<endl;
-        for(auto bit:curr_divident){
+        cout<<"\n_____C O N C L U S I O N_____\nRemainder obntained after division is: "<<endl;
+
+        for(int i=0;i<curr_divident.size();i++){
+        cout<<curr_divident[i]<<" ";
+            }
+            cout<<endl;
+        for(int i=0;i<curr_divident.size();i++){
+                int bit=curr_divident[i];
+
             if(bit!=0){
                 no_error=false;
                 cout<<"Remainder Obtained is NOT zero || Hence ask sender to resend the data"<<endl;
             }
         }
         if(no_error){
-            cout<<"Data received without any ERROR"<<endl;
+            cout<<"\nData received without any ERROR"<<endl;
+            cout<<"\nActual Data is: ";
+
+          for(int i=0;i<data.size()-curr_divident.size();i++){
+            cout<<data[i]<<" ";
         }
+        }
+
     }
     void Divide()
     {
@@ -92,11 +103,11 @@ int main()
 {
     int n,k,bit;
     vector<int> data,gx;
-    cout<<"Enter the number of bits in data stream: ";
+    cout<<"Enter the number of bits in received code word: ";
     cin>>n;
     cout<<"Enter the number of bits in g(x): ";
     cin>>k;
-    cout<<"Enter the data stream received: ";
+    cout<<"Enter the code word received: ";
     for(int i=0; i<n; i++)
     {   cin>>bit;
         data.push_back(bit);
