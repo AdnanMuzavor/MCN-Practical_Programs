@@ -31,3 +31,10 @@
 
 ## Exp 5: Socket Programming
 - To create a SOCKET for two way and one way communication between **server and client**.
+
+## Exp 6: Knowing IP addresses
+- Includes IP addressing fundamentals, classful IP addressing, CIDR and subnetting.
+
+## Exp 7: Using The Cisco Packet Tracer
+- In this experment we use Cisco packet tracer to form network topologies using switch and then router.
+- Packet tracer was used effectively to send packet from one network to other using the router.
